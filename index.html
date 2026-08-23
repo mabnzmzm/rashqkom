@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رشقكم بغدادي</title>
 
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,Tahoma,sans-serif;
+}
+
+body{
+  background:#090b0f;
+  color:#fff;
+}
+
+header{
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #222;
+  background:#0d1015;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#d9a83e;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  margin:0 10px;
+}
+
+.login{
+  border:1px solid #d9a83e;
+  color:#d9a83e;
+  padding:10px 18px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+.hero{
+  text-align:center;
+  padding:90px 20px 60px;
+  background:
+    radial-gradient(circle at center,#30240c 0,#090b0f 55%);
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:#d9a83e;
+}
+
+.hero p{
+  color:#aaa;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  background:#d9a83e;
+  color:#111;
+  padding:14px 30px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section{
+  padding:45px 7%;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.card{
+  background:#11151b;
+  border:1px solid #252a31;
+  border-radius:18px;
+  padding:28px 18px;
+  text-align:center;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#d9a83e;
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#999;
+  line-height:1.7;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.stat{
+  background:#11151b;
+  padding:25px;
+  border-radius:16px;
+  text-align:center;
+}
+
+.stat strong{
+  display:block;
+  color:#d9a83e;
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  border-top:1px solid #222;
+}
+
+@media(max-width:800px){
+  nav{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:480px){
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:65px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">رشقكم بغدادي</div>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#services">الخدمات</a>
+    <a href="#about">عن الموقع</a>
+  </nav>
+
+  <a class="login" href="#">دخول</a>
+</header>
+
+<section class="hero" id="home">
+  <h1>أهلاً بكم في <span>رشقكم بغدادي</span></h1>
+  <p>منصة خدمات رقمية لإدارة وتعزيز حضورك على منصات التواصل الاجتماعي.</p>
+  <a class="btn" href="#services">استكشف الخدمات</a>
+</section>
+
+<section class="section" id="services">
+  <h2>المنصات</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">📸</div>
+      <h3>Instagram</h3>
+      <p>خدمات للحسابات والمنشورات والتفاعل.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎵</div>
+      <h3>TikTok</h3>
+      <p>خدمات مخصصة لمحتوى وحسابات تيك توك.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✈️</div>
+      <h3>Telegram</h3>
+      <p>خدمات للقنوات والمحتوى على تيليجرام.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">▶️</div>
+      <h3>YouTube</h3>
+      <p>خدمات للمحتوى والقنوات على يوتيوب.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>ليش رشقكم بغدادي؟</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>24/7</strong>
+      دعم مستمر
+    </div>
+
+    <div class="stat">
+      <strong>⚡</strong>
+      واجهة سريعة
+    </div>
+
+    <div class="stat">
+      <strong>🔒</strong>
+      حماية الحساب
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 رشقكم بغدادي — جميع الحقوق محفوظة
+</footer>
+
+</body>
+  </html>
